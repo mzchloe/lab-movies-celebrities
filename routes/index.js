@@ -4,7 +4,7 @@ const router = require("express").Router();
 router.get("/", (req, res, next) => {
   res.render("index");
 });
-
+/* 
 router.get('/celebrities', (req, res, next) => {
   res.render('celebrities.routes')
 });
@@ -12,5 +12,5 @@ router.get('/celebrities', (req, res, next) => {
 router.get('/movies', (req, res, next) => {
   res.render('/movies.routes')
 })
-
+ */
 module.exports = router;
