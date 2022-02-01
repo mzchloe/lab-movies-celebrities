@@ -8,7 +8,7 @@ const Celebrity = require('../models/Celebrity.model')
 // all your routes here
 //CREATE celebrity route
 router.get('/celebrities/create', (req, res) => {
-    res.render('/celebrities/new-celebrity')
+    res.render('celebrities/new-celebrity')
 })
 
 //SUBMIT celebrity route
