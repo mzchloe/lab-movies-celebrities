@@ -17,9 +17,10 @@ router.post('/celebrities/create', async (req, res) => {
     res.redirect('/celebrities')
 })
 
+//SHOW Celebrity list, looking at our database
 router.get('/celebrities', async (req, res) => {
 try {    const celebrities = await Celebrity.find()
-    res.render('celebrities/celebrities', { celebrities })
+    res.render('celebrities/celebrities', { celebrities }) 
 } 
 catch(error) {
     res.render('celebrities/new-celebrity')
